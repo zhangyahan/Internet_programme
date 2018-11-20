@@ -1,0 +1,13 @@
+os.path.abspath(__file__): 获取当前文件的绝对路径
+os.path.dirname(file_path): 获取文件的上级路径
+sys.path.append(PATH): 将指定路径添加到环境变量中
+==================================================
+op = optparse.OptionParser(): 返回一个解析对象
+op.add_option('-s(选项)', '--server', dest='server')
+    向对象中添加属性
+options, args = op.parse_args()
+    返回一个元祖,第一个是定义好参数的对象,
+    第二个是多余参数的列表
+options.属性: 取值
+
+

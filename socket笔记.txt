@@ -82,7 +82,8 @@ UDP是无连接,面向消息的协议,
      发送端发送的消息间隔过短,数据量较小,
 解决粘包
 
-
+设置端口可重用(在绑定地址前使用)
+    socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 
 res = subprocess.Popen('命令', shell=True, stdout=subprocess.PIPE)
 res.stdout.read()  读出管道内容
@@ -149,3 +150,23 @@ https://www.processon.com/diagraming/5be828d6e4b0ee747578b7d5
 
 对于tcp来说 self.socket = conn客户端套接字
 对于udp来说, self.socket = (client_data_bytes, udp的套接字对象)
+
+
+
+
+
+
+
+
+
+
+认证客户端的链接合法性
+os.urandom(32): 产生32位随机字节
+h = hmac.new(bytes1, bytes2): 加盐, 将b1加到b2中返回一个对象
+digest = h.digest(): 返回加盐后的8位字节
+hmac.compare_digest(respon, digest): 
+    比较两个参数是否一致,返回True或False
+
+
+
+
