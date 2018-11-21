@@ -6,6 +6,7 @@ import hmac
 
 secret_key = b"zyh bang bang bang"
 
+
 def conn_auth(conn):
     """
     判断链接是否合法
@@ -36,6 +37,7 @@ def data_handler(conn, address, bufsize=1024):
             break
         print(data.decode('utf-8'))
         conn.send(data)
+
 
 def server_handler(ip_port, bufsize, backlog=5):
     """

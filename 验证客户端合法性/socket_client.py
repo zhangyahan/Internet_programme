@@ -42,4 +42,3 @@ def client_handler(ip_port, bufsize=1024):
 if __name__ == '__main__':
     ip_port = ('127.0.0.1', 9999)
     client_handler(ip_port)
-        

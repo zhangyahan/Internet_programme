@@ -5,7 +5,6 @@ from conf import settings
 from core import server
 
 
-
 class ArgvHandler(object):
 
     def __init__(self):
@@ -33,4 +32,3 @@ class ArgvHandler(object):
     
     def help(self):
         pass
-            
