@@ -2,6 +2,9 @@ os.path.abspath(__file__): 获取当前文件的绝对路径
 os.path.dirname(file_path): 获取文件的上级路径
 sys.path.append(PATH): 将指定路径添加到环境变量中
 ==================================================
+
+
+
 op = optparse.OptionParser(): 返回一个解析对象
 op.add_option('-s(选项)', '--server', dest='server')
     向对象中添加属性
@@ -10,15 +13,17 @@ options, args = op.parse_args()
     第二个是多余参数的列表
 options.属性: 取值
 
-configparser
+
+configparser: 配置文件模块
 
 
+断点续传: 获取以上传文件的大小, 修改文件的光标
+
+终端打印进度条: sys.stdout.write("")
 
 
 md5
-
 import hashlib
-
 s = hashlib.md5
 s.update('hello')
 s.update('world')
