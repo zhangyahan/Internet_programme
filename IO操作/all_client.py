@@ -2,7 +2,7 @@ import socket
 
 
 sock = socket.socket()
-sock.connect(('127.0.0.1', 9999))
+sock.connect(('127.0.0.1', 1234))
 
 while 1:
     msg = input('>>>')
